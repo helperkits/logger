@@ -43,4 +43,4 @@ class LOGGER {
 
 /* * */
 
-export default LOGGER;
+export default new LOGGER();
