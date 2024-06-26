@@ -13,7 +13,7 @@ class LOGGER {
 	//
 
 	error(message: string, error?: Error) {
-		console.log(`✘ ${message}`, error);
+		console.log(`✘ ${message}`, error || '');
 	}
 
 	//
