@@ -3,9 +3,9 @@
 class LOGGER {
 	//
 
-	divider(message?: string, size = 30) {
+	divider(message?: string, size = 50) {
 		console.log();
-		if (message) console.log(`${'-'.repeat(size / 2)} ${message} ${'-'.repeat(size / 2)}`);
+		if (message) console.log(`- ${message} ${'-'.repeat(size - 2 - message.length)}`);
 		else console.log('-'.repeat(size));
 		console.log();
 	}
@@ -36,6 +36,16 @@ class LOGGER {
 
 	success(message: string) {
 		console.log(`✓ ${message}`);
+	}
+
+	//
+
+	terminate(message: string) {
+		console.log();
+		console.log('- - - - - - - - - - - - - - - - - - - - -');
+		console.log(message);
+		console.log('- - - - - - - - - - - - - - - - - - - - -');
+		console.log();
 	}
 
 	//
