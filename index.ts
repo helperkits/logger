@@ -24,6 +24,16 @@ class LOGGER {
 
 	//
 
+	init() {
+		console.log();
+		console.log('------------------------');
+		console.log((new Date()).toISOString());
+		console.log('------------------------');
+		console.log();
+	}
+
+	//
+
 	success(message: string) {
 		console.log(`✓ ${message}`);
 	}
