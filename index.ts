@@ -25,10 +25,11 @@ class LOGGER {
 	//
 
 	init() {
+		const currentDate = new Date().toISOString();
 		console.log();
-		console.log('------------------------');
-		console.log((new Date()).toISOString());
-		console.log('------------------------');
+		console.log('-'.repeat(currentDate.length));
+		console.log(currentDate);
+		console.log('-'.repeat(currentDate.length));
 		console.log();
 	}
 
@@ -42,9 +43,9 @@ class LOGGER {
 
 	terminate(message: string) {
 		console.log();
-		console.log('- - - - - - - - - - - - - - - - - - - - -');
+		console.log('-'.repeat(message.length));
 		console.log(message);
-		console.log('- - - - - - - - - - - - - - - - - - - - -');
+		console.log('-'.repeat(message.length));
 		console.log();
 	}
 
