@@ -35,6 +35,14 @@ class LOGGER {
 
 	//
 
+	spacer(lines: number) {
+		for (let i = 0; i < lines; i++) {
+			console.log();
+		}
+	}
+
+	//
+
 	success(message: string) {
 		console.log(`✓ ${message}`);
 	}
@@ -46,6 +54,14 @@ class LOGGER {
 		console.log('-'.repeat(message.length));
 		console.log(message);
 		console.log('-'.repeat(message.length));
+		console.log();
+	}
+
+	//
+
+	title(message: string) {
+		console.log();
+		console.log(`▶︎ ${message}`);
 		console.log();
 	}
 
